@@ -6,19 +6,7 @@ var SPAWN_RATE = 1 / 1.2;
 var OPENING = 144;
 
 
-WebFontConfig = {
-    google: { families: [ 'Press+Start+2P::latin' ] },
-    active: main
-};
-(function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-})(); 
+main();
 
 
 function main() {
@@ -4257,7 +4245,7 @@ function create() {
         10,
         'PICNIC LAB PRESENTA:',
         {
-            font: '8px "Press Start 2P"',
+            //font: '8px "Press Start 2P"',
             fill: '#fff',
             align: 'center'
         }
@@ -4299,7 +4287,7 @@ function create() {
         game.world.height / 4,
         "",
         {
-            font: '16px "Press Start 2P"',
+            //font: '16px "Press Start 2P"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 4,
@@ -4313,7 +4301,7 @@ function create() {
         game.world.height - game.world.height / 4,
         "",
         {
-            font: '8px "Press Start 2P"',
+            //font: '8px "Press Start 2P"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 4,
@@ -4327,7 +4315,7 @@ function create() {
         game.world.height / 2,
         "",
         {
-            font: '16px "Press Start 2P"',
+            //font: '16px "Press Start 2P"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 4,
