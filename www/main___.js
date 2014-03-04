@@ -2803,7 +2803,6 @@ var _pollitosmp3 = 'data:audio/mpeg;base64,'+
     'AAAAAAAAAAAAAAAAAAAAAAAAAABUQUcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'+
     'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'+
     'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==';
-
 var _pollitosogg = 'data:application/ogg;base64,'+
     'T2dnUwACAAAAAAAAAAA0yJ8YAAAAAL7wRnsBHgF2b3JiaXMAAAAAAkSsAAAAAAAAAHcBAAAAAAC4'+
     'AU9nZ1MAAAAAAAAAAAAANMifGAEAAADEgGQXEHr//////////////////+IDdm9yYmlzLQAAAFhp'+
@@ -4171,6 +4170,7 @@ var _pollitosogg = 'data:application/ogg;base64,'+
     'Xx0BADmH8TgOh31z2B/2h/3hOI/zaJqmU9M067JmDil43kWaLuvSNE3TNPu2b/v7eT/v5/1cLz/3'+
     'cz/TPM3TPM3TnDma8ziPZk8Z0DTrsi7zNKfTHAfz8/f+/v7+/i5EVZU+Py80US+ruPd3iAP73r35'+
     'e4f5+fl5BZmdn1fgeZ+db577SdM0TTP/vL+/v7+/v3tAAw4=';
+
 function preload() {
     var assets = {
         spritesheet: {
