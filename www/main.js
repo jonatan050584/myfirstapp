@@ -4203,13 +4203,13 @@ function preload() {
             arboles: [_arboles],
             sky: [_sky],
             fence: [_fence]
-        },
+        }/*,
         audio: {
             flap: [_flap],
             score: [_score],
             hurt: [_hurt],
             loop: [_pollitosmp3, _pollitosogg]
-        }
+        }*/
     };
     Object.keys(assets).forEach(function(type) {
         Object.keys(assets[type]).forEach(function(id) {
@@ -4337,10 +4337,10 @@ function create() {
     gameOverText.anchor.setTo(0.5, 0.5);
     gameOverText.scale.setTo(2, 2);
     // Add sounds
-    flapSnd = game.add.audio('flap');
+    /*flapSnd = game.add.audio('flap');
     scoreSnd = game.add.audio('score');
     hurtSnd = game.add.audio('hurt');
-	loopSnd = game.add.audio('loop');
+	loopSnd = game.add.audio('loop');*/
     // Add controls
     game.input.onDown.add(flap);
     // Start clouds timer
@@ -4383,7 +4383,7 @@ function start() {
     // START!
     gameStarted = true;
 	//Sonido loop
-	loopSnd.play('',0,1,true);
+	//loopSnd.play('',0,1,true);
 }
 
 function flap() {
@@ -4392,7 +4392,7 @@ function flap() {
     }
     if (!gameOver) {
         birdie.body.velocity.y = -FLAP;
-        flapSnd.play();
+        //flapSnd.play();
     }
 }
 
@@ -4463,7 +4463,7 @@ function addScore(_, inv) {
     invs.remove(inv);
     score += 1;
     scoreText.setText(score);
-    scoreSnd.play();
+    //scoreSnd.play();
 }
 
 function setGameOver() {
@@ -4487,8 +4487,8 @@ function setGameOver() {
     fingersTimer.stop();
     // Make birdie reset the game
     birdie.events.onInputDown.addOnce(reset);
-    hurtSnd.play();
-	loopSnd.stop();
+    //hurtSnd.play();
+	//loopSnd.stop();
 }
 
 function update() {
