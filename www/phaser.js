@@ -5230,7 +5230,7 @@
                 }, a.data.onerror = function () {
                     return b.fileError(b._fileIndex)
                 },
-                a.data.src = a.url; 
+                a.data.src = a.url;
                 //a.data.crossOrigin = this.crossOrigin, a.data.src = this.baseURL + a.url;
                 break;
             case "audio":

@@ -4381,6 +4381,8 @@ function flap() {
     if (!gameOver) {
         birdie.body.velocity.y = -FLAP;
         //flapSnd.play();
+        var snd = new Audio(_flap);
+        snd.play();
     }
 }
 
