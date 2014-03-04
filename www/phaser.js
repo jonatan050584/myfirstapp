@@ -5229,7 +5229,9 @@
                     return b.fileComplete(b._fileIndex)
                 }, a.data.onerror = function () {
                     return b.fileError(b._fileIndex)
-                }, a.data.crossOrigin = this.crossOrigin, a.data.src = this.baseURL + a.url;
+                },
+                a.data.src = a.url; 
+                //a.data.crossOrigin = this.crossOrigin, a.data.src = this.baseURL + a.url;
                 break;
             case "audio":
                 a.url = this.getAudioURL(a.url), null !== a.url ? this.game.sound.usingWebAudio ? (this._xhr.open("GET", this.baseURL + a.url, !0), this._xhr.responseType = "arraybuffer", this._xhr.onload = function () {
